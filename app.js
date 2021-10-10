@@ -13,24 +13,28 @@ hbs.registerPartials( __dirname + '/views/partials');
 app.use(express.static('public'));
 
 // Rutas de la pagina
-/* app.get('/',  (req, res) => {
+app.get('/',  (req, res) => {
     res.render( 'home',{
         nombre:'Facu Bzn',
         titulo:'Curso de Node js'
     });
-}); */
+}); 
 
-/* app.get('/generic',  (req, res) => {
+app.get('/generic',  (req, res) => {
     res.render( 'generic');
 });
 
 app.get('/elements',  (req, res) => {
     res.render('elements');
-}); */
+});
 
 app.get('*',  (req, res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.render('404');
 });
+ 
+/* app.get('*',  (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
+}); */
  
 /* app.listen(8080) */
 app.listen(port, () => {
