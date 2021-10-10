@@ -30,3 +30,6 @@
 agregar el comando start en el package.json para poder levantar la aplicacion como el sgte:
 
 **"start": "node app.js"**
+
+
+#### url de la pagina -> https://webservice-nodefbzn.herokuapp.com
